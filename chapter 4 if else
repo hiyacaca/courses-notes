@@ -1,0 +1,38 @@
+# yahang NO.1
+# 6/13/2023 11:44 AM 的你也真的很棒棒呢！
+#往哪走呢？
+
+#程序的组织结构：顺序，选择if，循环while，for-in
+
+#双分支结构
+a=int(input('请输入整数'))
+if a%2==1:
+ print('奇数')
+else:
+ print('偶数')
+
+# 多分支结构 多选一
+b=int(input('请输入整数 成绩'))
+if b>100 or b<0:
+    print('成绩输入错误')
+elif b>90 and b<=100:
+    print('a')
+elif b>=80:
+    print('b')
+elif b>=70:
+    print('c')
+else: print('failed')
+
+#嵌套 nested if
+a=input('你有会员卡吗？1=有，2=没有')
+b = int(input('今天消费多少？'))
+if a=='1':
+    if b<=100:
+        print('不打折，付款金额为',b )
+    elif b<=200:
+        print('打九折，付款金额为',b*0.9)
+    else: print('打八折，付款金额为',b*0.8)
+else:
+    if b>=200:
+        print('打九折，付款金额为',b)
+    else : print('金额为',b)
