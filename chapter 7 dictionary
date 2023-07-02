@@ -1,0 +1,35 @@
+# yahang NO.1
+# 7/2/2023 2:31 PM 的你也真的很棒棒呢！
+s1={'a':99,'b':100}
+s2=dict(c=101,d=102,e=103)
+print(s1)
+print(s2)
+#two ways of getting the value according to the key
+print(s1['a'])
+print(s1.get('b'))
+
+'''print(s1['c'])'''#give KeyError when key can't be find
+print(s1.get('c'))#give None when key can't be find
+
+#delete the element
+del s1['a']
+print(s1)
+
+s1.clear()
+print(s1)
+
+#show the dict
+print(s2.keys())
+print(s2.values())
+print(s2.items())#create a tuple
+
+#traversal 遍历
+for i in s2:
+    print(i,s2[i],s2.get(i))
+
+#dictionary Comprehension using zip()
+items=['aa','bb','cc','dd','ee']
+scores=[11,22,33,44,55]
+
+s3={items.title():scores for items,scores in zip(items,scores)}
+print(s3)
