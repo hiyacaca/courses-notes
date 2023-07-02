@@ -1,0 +1,29 @@
+# courses-notes
+Course notes according to these:https://bilibili.com/video/BV1wD4y1o7AS?p=1&amp;vd_source=384e7e1d470062b8f3af8986ec2e0c30
+
+# yahang NO.1
+# 6/2/2023 8:19 AM 的你也真的很棒棒呢！
+print(chr(0b100111001011000))
+print(ord('乘'))
+
+#查看保留字，不能用来给变量命名
+import keyword
+print(keyword.kwlist)
+
+#变量由标识，类型，值组成
+name='devin'
+print('id:',id(name))#标识
+print('类型',type(name))#类型
+print('值',name)#值
+
+print('十六进制', 0x1E)
+
+#三引号可以跨行输出
+print("""freedom 
+and
+love
+""")
+print('''freedom 
+and
+love
+''')
