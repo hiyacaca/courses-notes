@@ -1,0 +1,24 @@
+# yahang NO.1
+# 6/3/2023 9:50 AM 的你也真的很棒棒呢！
+
+#输入函数 input
+a=input("你今天开心吗？1=开心，2=不开心")
+b=input('really?')
+print(a+b)
+
+#Arithmetic Operators
+print(-9%4)
+print(9%-4)
+
+#bool Operators 运算符
+a,b=1,2
+print(1==1 and b==2)
+print(a==1 or b==2)
+print(a==1 or b<2)
+s='nihao'
+print('a' in s)
+print('a' not in s)
+
+#bitewise Operators 位运算符
+print(4&8) #按位与  同为1时为1
+print(4<<1) #向左移动一位，在二进制中
