@@ -1,0 +1,90 @@
+# yahang NO.1
+# 6/23/2023 1:25 PM 的你也真的很棒棒呢！
+print("---------------tuple---------------")
+#two ways of creating a tuple
+t1=('python','helllo',9,9)
+print('t1:',t1)
+print(type(t1))
+
+t2='python','helllo',9,9
+print('t2:',t2)
+print(type(t2))
+
+t3=(10)#int
+print('t3:',t3)
+print(type(t3))
+
+t3=(10,)#tuple:when there is only one element need a , on the end
+print('t3:',t3)
+print(type(t3))
+
+#traversal 遍历
+for i in t1:
+    print(i,end='\t')
+
+print()
+print("---------------set---------------")
+#可变序列，元素存在无序
+
+#two eays of creating a set
+s1={1,2}
+s2=set([1,2,3])
+print(s1)
+print(s2)
+print(type(s1))
+print(type(s2))
+
+s3=set(range(6))
+s4=set('python')
+print(s3)
+print(s4)
+
+#add more elements
+#using add()
+print('s1 before:',s1)
+s1.add('good')
+print('s1 after:',s1)
+
+#using update()
+print('s2 before:',s2)
+s2.update(s4)
+print('s2 after:',s2)
+
+#delete elements
+s1.remove(1)
+print('s1 after:',s1)
+'s1.remove(3)'#return error when the key is not existed
+s1.discard(3)#does not return error
+
+print('s2 before:',s2)
+s2.pop()#delete a random element
+print('s2 after:',s2)
+
+s1.clear()
+print(s1)
+
+
+#relationships between mutiple sets
+print(s2)
+print(s3)
+print(s4)
+print(s4.issubset(s2))#true
+print(s2.issuperset(s4))#true
+print(s3.isdisjoint(s4))#true
+
+print(s2.intersection(s3))#s2 intercept s3
+print(s2&s3)
+
+print(s2.union(s3))#s2 UNION s3
+print(s2|s3)
+
+print(s2.difference(s3))#s2-s3
+print(s2-s3)
+
+print(s2.symmetric_difference(s3))#s2+s3-s2 intercept s3
+print(s2^s3)#symmetric_difference
+
+#set Comprehension
+set={i*i for i in range(1,10)}
+print(set)
+print(type(set))
