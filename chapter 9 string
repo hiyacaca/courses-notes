@@ -71,3 +71,36 @@ print('3.字母','abc张三'.isalpha())
 print('4.十进制','123四ⅤⅦ'.isdecimal())#false 只有1234是十进制数字
 print('5.数字','123四ⅤⅦ'.isnumeric())#true 中文和罗马数字都是数字
 print('6.字母数字','张三123'.isalnum())
+
+print('''
+      ###字符串的替换操作 replace###''')
+s='hello，world world world'
+print(s)
+print(s.replace('world','python',1))#replace 不会产生新的字符串
+
+print('''
+      ###字符串的合并操作 join ###''')
+print('*'.join(s))
+l1=["*","ji","ho"]
+print(type(l1))
+print(' '.join(l1))
+
+print('''
+      ###字符串的比较操作 comparision ###''')
+
+# yahang NO.1
+# 6/28/2023 12:28 PM 的你也真的很棒棒呢！
+print('''
+      ###字符串的宽度，精度，格式化 format string ###''')
+name='Devin'
+age=24
+print('my name is %s, I am %d years old'%(name,age))
+print('my name is {0}, I am {1} years old'.format(name,age))
+print(f'my name is {name}, I am {age} years old')
+
+a=3.1415926
+print('%10d'%24)
+print('%10.3f'%a)
+
+print('保留三位小数：圆周率是{0:10.3f}'.format(a))
+print('保留三个有效数字：圆周率是{0:10.3}'.format(a))
