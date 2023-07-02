@@ -1,0 +1,42 @@
+# yahang NO.1
+# 6/18/2023 5:21 PM 的你也真的很棒棒呢！
+lst=[10,20,30,40,50,60,70,80]
+print(lst[0:6:1])
+print(lst[0:6])
+print(lst[0:6:2])#步长为2
+
+print(lst[:6:2])#省略start，默认从原列表的第一个开始
+print('步长为负数时：')
+
+print(lst[::-1])
+print(lst[7::-1])
+
+#列表的增减 edit list
+lst2=['a','b','c']
+lst[:1]=lst2#在【0：1）的对象删掉，换成lst2
+print(lst)
+
+lst=[10,20,30,40,50,60,70,80]
+lst[1:1]=lst2#在【1：1）的对象删掉，换成lst2
+print(lst)
+
+#列表的排序 rank list
+print('排序')
+lst=[10,30,20]
+print(lst)
+lst.sort()
+print('after sort：',lst)
+lst.sort(reverse=True)
+print('after sort REVERSE：',lst)
+
+#SORTED created a new list
+lst=[10,30,20]
+lst2=sorted(lst)
+print(lst2)
+lst2=sorted(lst,reverse=True)
+print(lst2)
+
+#create a new list using for in
+lst=[i for i in range(2,11,2)]
+print(lst)
+print(list(range(2,11,2)))
